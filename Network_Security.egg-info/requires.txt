@@ -1,0 +1,9 @@
+python-dotenv
+pandas
+numpy
+pymongo
+certifi
+pymongo[srv]>=4.6
+scikit-learn
+dill
+pymal
