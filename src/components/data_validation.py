@@ -18,6 +18,7 @@ class DataValidation:
             self.data_ingestion_artifact = data_ingestion_artifact
             self.data_validation_config = data_validation_config
             self._schema_config = read_yaml_file(SCHEMA_FILE_PATH)
+            
         except Exception as e:
             raise NetWorkSecurityException(e, sys)
     
@@ -70,6 +71,7 @@ class DataValidation:
             raise NetWorkSecurityException(e, sys)
         
     def initiate_data_validation(self) -> DataValidationArtifact:
+           logging.info("Entered initiate_data_validation method of DataValidation class")    
            try:
                train_file_path = self.data_ingestion_artifact.trained_file_path
                test_file_path = self.data_ingestion_artifact.test_file_path

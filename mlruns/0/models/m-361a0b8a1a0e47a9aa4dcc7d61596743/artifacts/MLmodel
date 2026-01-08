@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/ps302/OneDrive/Desktop/network_security/mlruns/0/models/m-361a0b8a1a0e47a9aa4dcc7d61596743/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.15
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.8.1
+model_id: m-361a0b8a1a0e47a9aa4dcc7d61596743
+model_size_bytes: 26979969
+model_uuid: m-361a0b8a1a0e47a9aa4dcc7d61596743
+prompts: null
+run_id: 428c20e10ab74e44aac18b9c81d87873
+utc_time_created: '2026-01-08 07:28:54.299575'
